@@ -10,8 +10,8 @@ colunas = ['tamanho','ano','garagem']
 modelo = pickle.load(open('models/modelo.sav','rb'))
 
 app = Flask(__name__)
-app.config['BASIC_AUTH_USERNAME'] = "reinaldo"#os.environ.get('BASIC_AUTH_USERNAME')
-app.config['BASIC_AUTH_PASSWORD'] = "alura"#os.environ.get('BASIC_AUTH_PASSWORD')
+app.config['BASIC_AUTH_USERNAME'] = os.environ.get('BASIC_AUTH_USERNAME')
+app.config['BASIC_AUTH_PASSWORD'] = os.environ.get('BASIC_AUTH_PASSWORD')
 
 basic_auth = BasicAuth(app)
 
