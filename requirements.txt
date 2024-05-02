@@ -13,3 +13,4 @@ six==1.14.0
 textblob
 Werkzeug==1.0.1
 gunicorn
+setuptools==59.6.0
